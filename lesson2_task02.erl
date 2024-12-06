@@ -1,6 +1,5 @@
 -module(lesson2_task02).
 -export([but_last/1]).
 
-% Основна функція для знаходження двох останніх елементів списку
-but_last([X, Y | []]) -> [X, Y];   % Якщо в списку два елементи, повертаємо їх
-but_last([_ | Tail]) -> but_last(Tail).  % Рекурсивно проходимо список
+but_last([X, Y | []]) -> [X, Y];   
+but_last([_ | Tail]) -> but_last(Tail). 
